@@ -1,0 +1,20 @@
+nav {
+    background-color: #318bda;
+}
+
+header {
+    min-height: 499px;    background-image: url(../img/header1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.signup-social {
+    height: 499px;
+}
+
+.signup-social-item {
+    color:#ffffff;
+    width: 200px;
+    height: 20px;
+}
