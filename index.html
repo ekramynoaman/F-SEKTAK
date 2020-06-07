@@ -13,7 +13,7 @@
 <body>
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-sm navbar-light">
-        <a class="navbar-brand text-white" href="/index.html">F-SEKTAK</a>
+        <a class="navbar-brand text-white font-weight-bold" href="/index.html">F-SEKTAK</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link  text-white" href="#">Sign in<span class="sr-only">(current)</span></a>
+                    <a class="nav-link  text-white font-weight-bold" href="/signin.html">Sign in<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  text-white" href="#">Contact us</a>
+                    <a class="nav-link  text-white nav-link--border font-weight-bold" href="#">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  text-white" href="#">About</a>
+                    <a class="nav-link  text-white font-weight-bold" href="#">About</a>
                 </li>
                 
             </ul>
@@ -39,32 +39,86 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="align-items-center col-sm-5 d-flex justify-content-center social-signup">
-                    <div class="signup-social align-items-center d-flex flex-column justify-content-center">
-                        <a href="http://" class="signup-social-item">
-                            <i class="fab fa-google-plus-square"></i>                            <button class="btn text-white">sign in with google</button>
+                <div class="align-items-center col-md-6 d-flex justify-content-center">
+                    <div class="signup-social">
+                        <a href="" class="signup-social_item sign-social-google">
+                            <div class="signup-social-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+
+                            <button class="btn signup-social-btn">sign up with google</button>
                             
                         </a>
-                        <a href="http://" class="signup-social-item">
-                            <i></i>
-                            <button class="btn text-white">sign in with facebook</button>
+                        <a href="" class="signup-social_item sign-social-facebook">
+                            <div class="signup-social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <button class="btn signup-social-btn">sign up with facebook</button>
                             
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-2 ">
-                    <p>OR</p>
+                <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <p class="text-white font-weight-bold">or</p>
                 </div>
-                <div class="col-sm-5 signup-menu">
-                    <div class="form-group">
-                      <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <span class="circle"></span>
+                <div class="col-md-4 py-3 signup-menu">
+                    <form class="signup-form">
+                    <div class="form-group d-flex justify-content-center">
+                      <input type="text" name="firstName" id="firstName" class="form-control signup-form__input" placeholder="First Name" aria-describedby="helpId">
+                      <span class="signup-form__icon"><i class="far fa-user"></i></span>
                     </div>
-                    <div class="form-group">
-                      <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <span class="circle"></span>
+                    <div class="form-group d-flex justify-content-center">
+                      <input type="text" name="lasttName" id="lasttName" class="form-control signup-form__input" placeholder="Last Name" aria-describedby="helpId">
+                      <span class="signup-form__icon"><i class="far fa-user"></i></span>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                      <input type="text" name="email" id="email" class="form-control signup-form__input" placeholder="Email" aria-describedby="helpId">
+                      <span class="signup-form__icon"><i class="far fa-user"></i></span>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                      <input type="text" name="mobilNum" id="mobilNum" class="form-control signup-form__input" placeholder="Mobile Number" aria-describedby="helpId">
+                      <span class="signup-form__icon"><i class="far fa-user"></i></span>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                      <input type="password" name="password" id="password" class="form-control signup-form__input" placeholder="Password" aria-describedby="helpId">
+                      <span class="signup-form__icon"><i class="far fa-user"></i></span>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                      <input type="password" name="confirmPass" id="confirmPass" class="form-control signup-form__input" placeholder="Confirm Password" aria-describedby="helpId">
+                      <span class="signup-form__icon"><i class="far fa-user"></i></span>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                      <input type="text" name="id" id="id" class="form-control signup-form__input" placeholder="ID" aria-describedby="helpId">
+                      <span class="signup-form__icon"><i class="far fa-user"></i></span>
+                    </div>
+
+                    <div class="form-group d-flex">
+                        <label for="">Birthday </label>
+                      <input type="text" name="day" id="day" class="form-control signup-form__input date" aria-describedby="helpId"> / 
+                      <input type="text" name="month" id="month" class="form-control signup-form__input date" aria-describedby="helpId"> / 
+                      <input type="text" name="year" id="year" class="form-control signup-form__input date" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group d-flex">
+                        <!-- <input type="radio" name="day" id="day" class="form-control signup-form__input" aria-describedby="helpId">
+                        <label for="">Female</label> 
+                        <input type="radio" name="month" id="month" class="form-control signup-form__input" aria-describedby="helpId"> 
+                        <label for="">Male</label>  -->
+                    
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> Female
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> Male
+                        </label>
                     </div>
                 </div>
+                    <button type="submit" class="btn btn-primary signup-form__btn">Sign Up</button>
+
+                    
+                </form>
+                </div>
+        
             </div>
         </div>
 
@@ -73,8 +127,8 @@
     <!-- start footer -->
     <footer>
         <div class="container">
-            <div class="copyright">
-                <p>&copy; 2020 F-SEKTAK .ALL RIGHTS RESERVED</p>
+            <div class="d-flex py-2">
+                <p class="copyright">&copy; 2020 F-SEKTAK .ALL RIGHTS RESERVED</p>
             </div>
         </div>
     </footer>
